@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "return to Twitter",
+    "version": "1.0.0",
+    "description": "Xwitter->Twitter",
+    "content_scripts": [{
+      "matches": ["https://twitter.com/*"],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": ["main.js"]
+    }]
+  }
